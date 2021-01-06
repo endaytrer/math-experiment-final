@@ -27,7 +27,7 @@ for thetaPoint = theta_0
 
     semilogy(phi, res, 'color', [0 0.4470 0.7410])
     hold off;
-    title(["\theta_0=" + round(thetaPoint, 2)]);
+    title("\theta_0=" + round(thetaPoint, 2));
     xlabel("\phi")
     ylabel("x")
     axis([0 pi 1 10000])

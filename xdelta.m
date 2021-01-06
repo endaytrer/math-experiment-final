@@ -1,6 +1,6 @@
 index = 1;
-deltaSet = 0.01 : 0.01 : pi - 0.01;
-phi = 0.001 : 0.001 : pi - 0.001;
+deltaSet = 0.01:0.01:pi - 0.01;
+phi = 0.001:0.001:pi - 0.001;
 thetaPoint = 1.5;
 
 for delta = deltaSet
@@ -23,7 +23,7 @@ for delta = deltaSet
     ylabel("x")
     titleText = "\delta = " + round(delta, 2);
     title([titleText]);
-    axis([0, pi, 0, 10000])
+    axis([0, pi, 1, 10000])
     saveas(gcf, "ExperimentResultOfMatlab/x-delta/" + index + '.jpg')
     index = index + 1;
 end
